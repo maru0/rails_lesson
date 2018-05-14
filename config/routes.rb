@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+# root 'static_pages#hoge'
   get 'static_pages/home'
 
   get 'static_pages/help'
+
+  get 'static_pages/about'
+
+  get 'static_pages/root'
 
   resources :microposts
   resources :users
